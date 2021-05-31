@@ -13,9 +13,12 @@
 		8066EC7A2664ED5300CD27A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8066EC782664ED5300CD27A0 /* Main.storyboard */; };
 		8066EC7C2664ED5400CD27A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8066EC7B2664ED5400CD27A0 /* Assets.xcassets */; };
 		8066EC7F2664ED5400CD27A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8066EC7D2664ED5400CD27A0 /* LaunchScreen.storyboard */; };
+		98C1DD4C5DBC6A8AE7EB5DC3 /* Pods_Minecast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6027172D9A4EBE4DB619CDC7 /* Pods_Minecast.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4BFC19148C327123B799DDE1 /* Pods-Minecast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Minecast.release.xcconfig"; path = "Target Support Files/Pods-Minecast/Pods-Minecast.release.xcconfig"; sourceTree = "<group>"; };
+		6027172D9A4EBE4DB619CDC7 /* Pods_Minecast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Minecast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8066EC6F2664ED5300CD27A0 /* Minecast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Minecast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8066EC722664ED5300CD27A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8066EC742664ED5300CD27A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		8066EC7B2664ED5400CD27A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8066EC7E2664ED5400CD27A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8066EC802664ED5400CD27A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECD9D6B8F77C852F25DC0A0A /* Pods-Minecast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Minecast.debug.xcconfig"; path = "Target Support Files/Pods-Minecast/Pods-Minecast.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98C1DD4C5DBC6A8AE7EB5DC3 /* Pods_Minecast.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				8066EC712664ED5300CD27A0 /* Minecast */,
 				8066EC702664ED5300CD27A0 /* Products */,
+				91AB5A9817509C448C5CF617 /* Pods */,
+				EA56A4916C3D0F0D16AE4349 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +63,57 @@
 		8066EC712664ED5300CD27A0 /* Minecast */ = {
 			isa = PBXGroup;
 			children = (
-				8066EC722664ED5300CD27A0 /* AppDelegate.swift */,
-				8066EC742664ED5300CD27A0 /* SceneDelegate.swift */,
+				8066EC8A2664EDA000CD27A0 /* Views */,
+				8066EC882664ED8D00CD27A0 /* Resources */,
+				8066EC862664ED7400CD27A0 /* Core */,
 				8066EC762664ED5300CD27A0 /* ViewController.swift */,
-				8066EC782664ED5300CD27A0 /* Main.storyboard */,
 				8066EC7B2664ED5400CD27A0 /* Assets.xcassets */,
-				8066EC7D2664ED5400CD27A0 /* LaunchScreen.storyboard */,
 				8066EC802664ED5400CD27A0 /* Info.plist */,
 			);
 			path = Minecast;
+			sourceTree = "<group>";
+		};
+		8066EC862664ED7400CD27A0 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		8066EC882664ED8D00CD27A0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8066EC722664ED5300CD27A0 /* AppDelegate.swift */,
+				8066EC742664ED5300CD27A0 /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8066EC8A2664EDA000CD27A0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8066EC7D2664ED5400CD27A0 /* LaunchScreen.storyboard */,
+				8066EC782664ED5300CD27A0 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		91AB5A9817509C448C5CF617 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ECD9D6B8F77C852F25DC0A0A /* Pods-Minecast.debug.xcconfig */,
+				4BFC19148C327123B799DDE1 /* Pods-Minecast.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EA56A4916C3D0F0D16AE4349 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6027172D9A4EBE4DB619CDC7 /* Pods_Minecast.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +123,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8066EC832664ED5400CD27A0 /* Build configuration list for PBXNativeTarget "Minecast" */;
 			buildPhases = (
+				942C80701F56341E1DC6A158 /* [CP] Check Pods Manifest.lock */,
 				8066EC6B2664ED5300CD27A0 /* Sources */,
 				8066EC6C2664ED5300CD27A0 /* Frameworks */,
 				8066EC6D2664ED5300CD27A0 /* Resources */,
+				B5CB906CAD2F71A647A07040 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +182,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		942C80701F56341E1DC6A158 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Minecast-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5CB906CAD2F71A647A07040 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Minecast/Pods-Minecast-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Minecast/Pods-Minecast-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Minecast/Pods-Minecast-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8066EC6B2664ED5300CD27A0 /* Sources */ = {
@@ -283,6 +376,7 @@
 		};
 		8066EC842664ED5400CD27A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECD9D6B8F77C852F25DC0A0A /* Pods-Minecast.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +396,7 @@
 		};
 		8066EC852664ED5400CD27A0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BFC19148C327123B799DDE1 /* Pods-Minecast.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
